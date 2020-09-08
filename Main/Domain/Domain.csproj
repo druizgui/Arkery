@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+   <PropertyGroup>
+    <Version>1.0.0-beta-200908-003</Version>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Arkery.Domain</RootNamespace>
+    <RepositoryUrl>https://github.com/druizgui/Arkery</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/druizgui/Arkery</PackageProjectUrl>
+    <PackageIcon>Arkery.png</PackageIcon>
+    <PackageIconUrl>https://raw.githubusercontent.com/druizgui/Arkery/master/Arkery.png</PackageIconUrl>
+    <PackageLicenseFile></PackageLicenseFile>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>SOLID Architecture Netcore</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Copyright>David Ruiz</Copyright>
+    <Authors>David Ruiz</Authors>
+    <Company>David Ruiz</Company>
+    <NeutralLanguage>en</NeutralLanguage>
+    <GeneratePackageOnBuild Condition="'$(Configuration)' == 'Release'">true</GeneratePackageOnBuild>
+    <AssemblyName>Arkery.Domain</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\Arkery.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+   
+  
+  <!-- CODE QUALITY AND SECURITY -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="SecurityCodeScan" Version="3.5.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+  <!-- CODE QUALITY AND SECURITY -->
+  
+</Project>
